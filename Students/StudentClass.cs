@@ -14,7 +14,7 @@ namespace Students
         {
             if (Class.Where(s => s.Name.Contains(student.Name)).Any() && Class.Where(s => s.Surname.Contains(student.Surname)).Any())
             {
-                Console.WriteLine($"{student.Name} isminde ve {student.Surname} soyadında bir öğrenci var. Eklemek istediğine emin misin?");
+                Console.WriteLine($"{student.Name} isminde ve {student.Surname} soyadında, Id numarası {student.Id} olan bir öğrenci var. Eklemek istediğine emin misin?");
                 string answer = Console.ReadLine();
                 answer = answer.ToLower();
                 if (answer == "evet")
